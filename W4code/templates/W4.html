@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{{url_for('static',filename='W4.css')}}" />
+    <title>W4作業</title>
+  </head>
+  <body>
+    <div class="interface">
+      <div class="welcome">
+        <h1>歡迎歡迎，請輸入帳號密碼</h1>
+      </div>
+      <div class="login">
+        <form action="/signin" method="POST">
+          <h2>登入系統</h2>
+          帳號<input type="text" name="name" /> <br /><br />
+          密碼<input type="text" name="keyword" /> <br /><br />
+          <button>登入</button>
+        </form>
+      </div>
+      <hr />
+      <div class="square">
+        <form action="/requestnum">
+          <h2>計算正整數的平方</h2>
+          正整數<input type="text" name="requestNum" /> <br /><br />
+          <button>計算</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
